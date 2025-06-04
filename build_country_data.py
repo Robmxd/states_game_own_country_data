@@ -119,14 +119,13 @@ if __name__ == "__main__":
     y = 200
 
     # set data variables
-    MY_COUNTRY_MAP = MY_COUNTRY_MAP if (( var := input('Country map to set coordinates: ')) == '') else var
-    DF_PATH = DF_PATH if (( var := input('Path to csv file that holds states names: ')) == '') else var
-    STATES_FIELD = STATES_FIELD if ((var := input('State field name: ')) == '') else var
-
+    MY_COUNTRY_MAP = input('Path to country map: ')
+    DF_PATH = input('Path to csv file that contains state names: ')
+    STATES_FIELD = input('Name of the column with state names')
     set_states_list()
 
     window = Tk()
-    window.title("Making Country Data")
+    window.title("Building Country Data")
     window.config(padx=50, pady=50, bg=WHITE)
     window.geometry('%dx%d+%d+%d' % (width, height, x, y))
     STATES_FONT = tkfont.Font(family='Arial', size=14, weight='normal')
