@@ -17,8 +17,8 @@ import pandas as pd
 
 """
 
-MY_COUNTRY_MAP = 'day_25_us_states_game_start/country_game_data_maker/brasil_topografico.gif'
-DF_PATH = '/home/rob/Desktop/Projetos/backend/pythonStudy/day challenges/day_25_us_states_game_start/country_game_data_maker/stados_pos.csv'
+MY_COUNTRY_MAP = ''
+DF_PATH = ''
 ALIGNMENT = "right"
 FONT = ('Arial', 14, 'normal')
 
@@ -27,7 +27,7 @@ ORANGE = '#FFA725'
 LIGHT_GREEN = '#C1D8C3'
 GREEN = '#6A9C89'
 STATES_LIST = []
-STATES_FIELD = 'Estado'
+STATES_FIELD = ''
 CHECKED_STATES = []
 STATES_COORD = []
 CURRENT_IDX = 0
